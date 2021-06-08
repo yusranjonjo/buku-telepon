@@ -1,0 +1,192 @@
+/* 
+
+=> palette warna
+    -> #12073d
+    -> #2d254b
+    -> #59546c
+    -> #ca96ff
+    -> #ffffff
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 10px 'cabin', sans-serif;
+}
+
+body {
+    background-color: #12073de1;
+}
+
+.container {
+    width: 400px;
+    margin: 10vh auto;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+h1 {
+    margin: 0px 0 20px 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pembungkus-input {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+form {
+    width: 80%;
+}
+
+input {
+    margin: 20px 0 0 0;
+    padding: 10px 25px;
+    math-style: none;
+}
+
+.input-nomor {
+    width: 80%;
+    height: 40px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 0;
+}
+
+.input-nama {
+    width: 80%;
+    height: 40px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 0 0 0 20px;
+}
+
+.tombol-tambah {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    padding: 23px 20px;
+    background-color: #d0b3ed;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    outline: none;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    transition: all 250ms ease;
+    display: flex;
+}
+
+.tombol-tambah:hover {
+    background-color: #ca96ff;
+    cursor: pointer;
+}
+
+.fa-plus-square {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.btnToggle {
+    transform: translateX(1px) scale(1.10);
+}
+
+.daftar-kontak {
+    width: 400px;
+    margin: 20px 0 0 0;
+    background-color: #fff;
+    border-radius: 2px 0 0 2px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 5rem;
+    transition: all 0.4s ease;
+}
+
+.profil {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.profil i {
+    color: #ca96ff;
+    font-size: 2rem;
+}
+
+.edit {
+    background-color: #333;
+    border-radius: 2px 0 0 2px;
+    cursor: pointer;
+}
+
+.edit i {
+    color: #ca96ff;
+    font-size: 2rem;
+}
+
+.hapus {
+    background-color: #f3537b;
+    border-radius: 2px 0 0 2px;
+    margin: 0 0 0 -2px;
+    cursor: pointer;
+
+}
+
+
+
+.hapus i {
+    color: #fff;
+    font-size: 2rem;
+    pointer-events: none;
+}
+
+.profil,
+.nomor-nama,
+.edit,
+.hapus {
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.nomor-nama {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nomor {
+    color: #ca96ff;
+    font-size: 1.8rem;
+}
+
+.nama {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.hapus-slow {
+    transform: scale(2);
+    transition: all 1s ease;
+}
+
+.geser {
+    /* transform: translateY(8rem) rotateZ(20deg); */
+    transform: translateX(-100%);
+    opacity: 0;
+}
